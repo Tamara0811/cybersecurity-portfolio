@@ -69,6 +69,32 @@ The available evidence confirms that the email presented a security risk. Howeve
 
 Additional execution techniques were not mapped because the available evidence did not reveal the command or payload and did not confirm that the recipient executed the instructions.
 
+## Investigation Evidence
+
+### Email Details
+
+The email was delivered successfully despite originating from a suspicious sender domain.
+
+![Email details](screenshots/01-email-details.PNG)
+
+### Suspicious Execution Instructions
+
+The email instructed the recipient to open the Windows Run dialog, paste clipboard content, and execute it.
+
+![Suspicious execution instructions](screenshots/02-suspicious-instructions.PNG)
+
+### VirusTotal IP Reputation
+
+The sender IP address was flagged as malicious by 2/91 security vendors.
+
+![VirusTotal IP analysis](screenshots/03-virustotal-ip-analysis.PNG)
+
+### VirusTotal Domain Reputation
+
+The sender domain was flagged as malicious by 11/91 security vendors.
+
+![VirusTotal domain analysis](screenshots/04-virustotal-domain-analysis.PNG)
+
 ## Lessons Learned
 
 - Learned how to use VirusTotal to investigate the reputation of domains and IP addresses during an email investigation.
